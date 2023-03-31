@@ -6,6 +6,7 @@ class Service {
 
     async getPlanets(url) {
         const data = await this.makeRequest(url)
+
         return {
             name: data.name,
             surfaceWater: data.surface_water,
